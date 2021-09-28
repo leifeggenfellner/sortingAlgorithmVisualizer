@@ -19,8 +19,8 @@ const draw = () => {
     ctx.beginPath();
     ctx.fillStyle = "#FFF"
     for (let i = 0; i < arrayToSort.length; i++) {
-        ctx.fillRect((canvas.width / arrayToSort.length) * i, canvas.height - borderWidth, canvas.width / arrayToSort.length, -5 * arrayToSort[i]);
-        ctx.rect((canvas.width / arrayToSort.length) * i, canvas.height - borderWidth, canvas.width / arrayToSort.length, -5 * arrayToSort[i]);
+        ctx.fillRect((canvas.width / arrayToSort.length) * i, canvas.height, canvas.width / arrayToSort.length, -5 * arrayToSort[i]);
+        ctx.rect((canvas.width / arrayToSort.length) * i, canvas.height, canvas.width / arrayToSort.length, -5 * arrayToSort[i]);
     }
     ctx.closePath();
     ctx.strokeStyle = "#000";
