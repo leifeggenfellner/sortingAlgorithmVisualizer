@@ -1,0 +1,160 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Flex:regular);
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+  font-size: 1rem;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  background-color: #81a1c1;
+}
+
+.mainContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  background-color: #eceff4;
+}
+
+header {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #81a1c1;
+  color: #eceff4;
+}
+
+button:focus {
+  outline: none;
+}
+
+header > select {
+  height: 40%;
+  border: none;
+  background-color: #eceff4;
+}
+
+#algorithmSelect {
+  font-size: 15px;
+  padding: 4px;
+  border: none;
+  outline: none;
+  background-color: #81a1c1;
+  color: #eceff4;
+}
+
+header > select:focus {
+  outline: none;
+}
+
+header > select:-moz-focusring {
+  color: transparent;
+}
+
+header > label {
+  margin: 2px;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.selector {
+  margin-left: 8px;
+}
+
+header > div > button {
+  margin: 8px 0;
+  padding: 8px;
+  border: 2px solid #eceff4;
+  background-color: #81a1c1;
+  color: #eceff4;
+  transition: all 0.3s;
+}
+
+#startSorting {
+  margin-right: 8px;
+}
+
+header > div > button:hover {
+  cursor: pointer;
+}
+
+.slideContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 6px;
+  background-color: #81a1c1;
+  min-width: 171px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  background-color: #81a1c1;
+}
+
+.slider:focus {
+  outline: none;
+}
+
+.slider::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  background: #eceff4;
+}
+
+.slider::-webkit-slider-thumb {
+  border: 1px solid #eceff4;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #81a1c1;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -7px;
+}
+
+.slider:focus::-webkit-slider-runnable-track {
+  background: #eceff4;
+}
+
+.slider::-moz-range-track {
+  width: 100%;
+  height: 6px;
+  cursor: pointer;
+  background: #81a1c1;
+  border: 0.2px solid #eceff4;
+}
+
+.slider::-moz-range-thumb {
+  border: 1px solid #eceff4;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #81a1c1;
+  cursor: pointer;
+}
+
+.slideContainer > output {
+  font-weight: 460;
+}
