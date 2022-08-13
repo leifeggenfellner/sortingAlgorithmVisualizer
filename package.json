@@ -1,0 +1,24 @@
+{
+    "name": "sortingalgorithmvisualizer",
+    "version": "1.0.0",
+    "description": "Creating a program to visualize sorting algorithms",
+    "main": "./src/js/index.js",
+    "scripts": {
+        "build": "tsc --build tsconfig.json",
+        "clean": "rm -rf ./src/build/src/ts/*.js* ./src/build/src/ts/*.d.ts"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/leifeggenfellner/sortingAlgorithmVisualizer.git"
+    },
+    "author": "Leif Eggenfellner",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/leifeggenfellner/sortingAlgorithmVisualizer/issues"
+    },
+    "homepage": "https://github.com/leifeggenfellner/sortingAlgorithmVisualizer#readme",
+    "dependencies": {},
+    "devDependencies": {
+        "prettier": "^2.7.1"
+    }
+}

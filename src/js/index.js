@@ -23,17 +23,15 @@ const selectedAlgorithm = document.getElementById('algorithmSelect');
 const arrayObject = new SortingArray();
 arrayObject.generateArray(slider.value);
 
-const fps = 60;
-
 generateArrayButton.onclick = () => {
-  arrayObject.generateArray(slider.value);
+    arrayObject.generateArray(slider.value);
 };
 
 startSortingButton.onclick = () => {
-  switch (parseInt(selectedAlgorithm.value)) {
-    case 0:
-      const bubbleSort = new BubbleSort();
-      bubbleSort.sort(arrayObject.arr, ctx, canvasWidth, canvasHeight);
-      break;
-  }
+    switch (parseInt(selectedAlgorithm.value)) {
+        case 0:
+            const bubbleSort = new BubbleSort();
+            bubbleSort.sort(arrayObject.arr, ctx, canvasWidth, canvasHeight);
+            break;
+    }
 };

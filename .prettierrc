@@ -1,0 +1,8 @@
+{
+    'tabWidth': 4,
+    'tabs': true,
+    'semi': true,
+    'singleQuote': true,
+    'endOfLine': 'lf',
+    'embeddedLanguageFormatting': 'off',
+}
