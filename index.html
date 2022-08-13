@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css" />
-        <script src="./js/index.js" , type="module"></script>
+        <script src="./js/app.js" type="module"></script>
         <title>Sorting Algorithms</title>
     </head>
     <body>
@@ -16,6 +16,7 @@
                         <label for="algorithms">Algorithm: </label>
                         <select name="algorithms" id="algorithmSelect">
                             <option value="0">Bubble Sort</option>
+                            <option value="1">Console Log</option>
                         </select>
                     </div>
 
@@ -28,22 +29,17 @@
                             step="5"
                             class="slider"
                             id="slider"
-                            oninput="this.nextElementSibling.value = this.value"
                         />
                         <output>55</output>
                     </div>
 
                     <div class="buttons">
-                        <button type="disabled" id="generateArray">
-                            Generate Array
-                        </button>
                         <button type="disabled" id="startSorting">
                             Start Sorting
                         </button>
                     </div>
                 </header>
             </div>
-
             <canvas id="myCanvas"></canvas>
         </div>
     </body>

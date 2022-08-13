@@ -23,6 +23,8 @@ const selectedAlgorithm = document.getElementById('algorithmSelect');
 const arrayObject = new SortingArray();
 arrayObject.generateArray(slider.value);
 
+const fps = 60;
+
 generateArrayButton.onclick = () => {
     arrayObject.generateArray(slider.value);
 };
