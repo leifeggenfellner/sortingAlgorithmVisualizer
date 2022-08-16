@@ -30,6 +30,7 @@ export default class Sorter {
     this.#ctx.clearRect(0, 0, this.#canvasWidth, this.#canvasHeight);
 
     this.#ctx.fillStyle = '#B48EAD';
+    this.#ctx.strokeStyle = '#2E3440';
     this.#ctx.lineWidth = this.#arr.length >= 65 ? 1 : 2;
 
     this.#ctx.beginPath();
