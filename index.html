@@ -14,10 +14,16 @@
         <header>
           <div class="selector">
             <label for="algorithms">Algorithm: </label>
-            <select name="algorithms" id="algorithmSelect">
-              <option value="0" id="first">Bubble Sort</option>
-              <option value="1">Console Log</option>
-            </select>
+            <input
+              list="algorithms"
+              id="algorithms-choice"
+              name="algorithms-choice"
+              placeholder="Bubble Sort"
+            />
+            <datalist id="algorithms">
+              <option value="Bubble Sort" id="first"></option>
+              <option value="Console Log"></option>
+            </datalist>
           </div>
 
           <div class="slideContainer">
