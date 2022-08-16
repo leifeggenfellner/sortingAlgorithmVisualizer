@@ -162,3 +162,13 @@ header > div > button:hover {
 .slideContainer > output {
   font-weight: 460;
 }
+
+input {
+  outline: none;
+  border: none;
+  padding: 2px;
+}
+
+input::focus {
+  outline: none;
+}
